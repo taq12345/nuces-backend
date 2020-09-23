@@ -30,7 +30,7 @@ function sleep(ms) {
 
 
 var server = app.listen('8080', () => {
-  console.log("listening to 3000")
+  console.log("listening to 8080")
 });
 
 //app.use(express.static('../../NUCES Circle'));
