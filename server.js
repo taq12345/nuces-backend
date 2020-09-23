@@ -7,26 +7,26 @@ var app = express();
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
-// var db = mysql.createConnection({
-//   host: "mysql",
-//   user: "root",
-//   password: "shooting",
-//   database : "test"
-// });
+var db = mysql.createConnection({
+  host: "nuces-db-git",
+  user: "root",
+  password: "shooting",
+  database : "test"
+});
 
-function sleep(ms) {
-  var start = new Date().getTime(), expire = start + ms;
-  while (new Date().getTime() < expire) { }
-  return;
-}
-
+// function sleep(ms) {
+//   var start = new Date().getTime(), expire = start + ms;
+//   while (new Date().getTime() < expire) { }
+//   return;
+// }
 //sleep(15000);
-// db.connect(function(err) {
-// 	  if(err){
-// 		     throw err
-// 		    }
-// 	  console.log('mysql connected')
-// 	  });
+
+db.connect(function(err) {
+	  if(err){
+		     throw err
+		    }
+	  console.log('mysql connected')
+	  });
 
 
 var server = app.listen('8080', () => {
