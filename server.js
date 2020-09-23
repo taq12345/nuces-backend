@@ -14,13 +14,6 @@ var db = mysql.createConnection({
   database : "test"
 });
 
-// function sleep(ms) {
-//   var start = new Date().getTime(), expire = start + ms;
-//   while (new Date().getTime() < expire) { }
-//   return;
-// }
-//sleep(15000);
-
 db.connect(function(err) {
 	  if(err){
 		     throw err
