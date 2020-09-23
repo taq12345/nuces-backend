@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 var db = mysql.createConnection({
-  host: "mysqll",
+  host: "mysql",
   user: "root",
   password: "shooting",
   database : "test"
