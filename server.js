@@ -11,7 +11,7 @@ var db = mysql.createConnection({
   host: "nuces-db-1",
   user: "root",
   password: process.env.MYSQL_ROOT_PASSWORD,
-  database : process.env.MYSQL_DATABASE
+  database: process.env.MYSQL_DATABASE
 });
 
 db.connect(function(err) {
