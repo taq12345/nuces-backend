@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 var db = mysql.createConnection({
   host: "nuces-db-1",
   user: "root",
-  password: "shooting",
-  database : "test"
+  password: process.env.MYSQL_ROOT_PASSWORD,
+  database : process.env.MYSQL_DATABASE
 });
 
 db.connect(function(err) {
