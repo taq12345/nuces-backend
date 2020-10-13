@@ -22,8 +22,8 @@ db.connect(function(err) {
 	  });
 
 
-var server = app.listen('80', () => {
-  console.log("listening to 80")
+var server = app.listen('8080', () => {
+  console.log("listening to 8080")
 });
 
 //app.use(express.static('../../NUCES Circle'));
